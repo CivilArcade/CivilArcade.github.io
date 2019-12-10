@@ -2499,7 +2499,6 @@ footer .copyright span:last-child::after {
 #go-top {
 	position: fixed;
 	bottom: 0;
-	right: 0;
 	z-index: 600;
 	display: none;
 }
@@ -2845,4 +2844,29 @@ ul#nav li.current a {color:#4169E1;}
 	 padding: 0;
 	 border: none;
 	 outline: none;
+}
+
+
+.fb-customerchat.fb_iframe_widget iframe {
+    left:  auto;
+    transform:  none;
+}
+.back-top {
+    bottom:  100px;
+}
+@media only screen and (max-width: 480px) {
+    .fb-customerchat.fb_iframe_widget
+     iframe {
+        max-width: 360px !important;
+    }
+    .fb-customerchat.fb_iframe_widget+.fb_dialog {
+        right: 15px !important;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .fb-customerchat.fb_iframe_widget
+     iframe {
+        right: 0 !important;
+        max-width: 100% !important;
+    }
 }
